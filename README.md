@@ -32,6 +32,8 @@ If the drivers are correct you should see something like this:
 
 I am using the xrt from the xanderlent copr available here [xanderlent amd-npu-driver](https://copr.fedorainfracloud.org/coprs/xanderlent/amd-npu-driver/)
 
+You may need to `sudo ln -s /usr/xrt/lib64/libxrt_core.so.2 /usr/xrt/lib/libxrt_core.so.2` if you see an error about that library not being found (lib vs lib64).
+
 Verifying xrt (if using this copr, otherwise the paths are different):
 
 ```
