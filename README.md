@@ -6,6 +6,15 @@ This is my repository for tracking what I've done to get [Lemonade Server](https
 
 ## Requirements
 
+### Increase limits
+
+Add to /etc/security/limits.conf
+
+```
+* soft memlock unlimited
+* hard memlock unlimited
+```
+
 ### amd npu driver
 
 I believe at this time the most recent Fedora 43 is kernel 6.19 and comes with the appropriate drivers.
