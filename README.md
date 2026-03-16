@@ -214,3 +214,12 @@ systemctl --user daemon-reload
 systemctl --user start lemonade-server
 journalctl --user logs lemonade-server
 ```
+
+### linger user
+
+If using the quadlet as a user, you need to enable linger for that user.
+
+```
+loginctl enable-linger myuser
+loginctl show-user myuser --property=Linger
+```
